@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+    margin-top: 50px;
+    background-color: #FBF7E3;
+    border-radius: 50px;
+    width: 50%;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.card-container img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-inline: 25px;
+    color: #612406;
+}
+
+.card-content h3 span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cart {
+    background-color: #f4dc74;
+    margin-inline: 80px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 50%;
+    color: #612406;
+    border: none;
+    margin-bottom: 10px;
+}
