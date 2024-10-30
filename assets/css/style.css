@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    margin-top: 20px;
+    margin-inline: 20px;
+    /* ------------------------------- */
+    background-color: #FBF7E3;
+    border-radius: 50px;
+    padding-inline: 20px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    text-align: center;
+    padding-inline: 5px;
+    padding-block: 10px;
+    background-color: #F3DF85;
+    border-radius: 50px;
+    width: 20%;
+    color: #612406;
+}
+
+.alt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 20px;
+    padding-block: 5px;
+    padding-inline: 15px;
+    width: 25%;
+}
+
+.button.alt p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.button img {
+    width: 50px;
+}
+
+/* Card */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.card-container {
+    margin-top: 50px;
+    background-color: #FBF7E3;
+    border-radius: 50px;
+    width: 45%;
+    margin-inline: auto;
+    overflow: hidden;
+    margin-inline: 10px;
+}
+
+.card-container img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-inline: 25px;
+    color: #612406;
+}
+
+.card-content h3 span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cart {
+    background-color: #f4dc74;
+    margin-inline: 80px;
+    border-radius: 50px;
+    padding: 10px;
+    width: 50%;
+    color: #612406;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Article */
+.article-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBF7E3;
+    margin: 20px;
+    border-radius: 10px;
+    color: #612406;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.article-container img {
+    width: 100%;
+    padding: 20px;
+    order: 1;
+}
+
+@media screen and (min-width: 767px) {
+    .article-container img {
+        width: 50%;
+        object-fit: contain;
+        order: unset;
+    }
+
+    .article-container {
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+}
